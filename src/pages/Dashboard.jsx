@@ -36,7 +36,12 @@ export default function Dashboard() {
     }
   };
 
-  if (!data) return <div className="text-white p-10">Loading...</div>;
+  if (!data)
+    return (
+      <div className="text-white p-10 h-full flex justify-center items-center">
+        Loading...
+      </div>
+    );
 
   return (
     <div className="min-h-screen bg-slate-900 text-white p-6">
