@@ -20,7 +20,7 @@ export default function App() {
   }
 
   return (
-    <div className=" bg-slate-900 md:px-20 h-[100%]">
+    <div className=" bg-slate-900 md:px-20 w-full h-[100%]">
       <div
         className={`${isUser ? "flex" : "hidden"} justify-around mb-2 items-center pt-4 `}
       >
