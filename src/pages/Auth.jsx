@@ -24,14 +24,14 @@ export default function Auth() {
 
         localStorage.setItem("token", res.data.token);
         alert("Login successful");
-        navigate("/dashboard");
+        window.location.href = "/dashboard";
       } else {
         await API.post("/auth/register", form);
         alert("Registered successfully");
         setIsLogin(true);
       }
     } catch (err) {
-      alert(err.response?.data?.message || "Error");
+      alert(err.response?.data?.message || "Error while getting to user");
     }
   };
 
